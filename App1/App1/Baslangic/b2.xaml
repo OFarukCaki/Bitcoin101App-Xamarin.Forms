@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Baslangic.b2">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <!--<StackLayout Padding="10,0,10,10">
+
+                    <Label Text="1.2 - Bitcoinin Yapısı" HorizontalOptions="Center" FontSize="Large" 
+                   TextColor="White" FontAttributes="Bold"/>
+                    -->
+                <!--<Image Source="bitLogo.png" WidthRequest="120" HeightRequest="120"/>-->
+                <!--
+                </StackLayout>-->
+                <StackLayout Padding="10,10,10,0">
+                    <Label TextColor="White" FontSize="Medium" LineBreakMode="CharacterWrap"
+                           Text="      Bitcoin açık anahtar ve gizli anahtar olmak üzere temelde iki parçadan oluşur.  Gizli anahtar(Secret key), bir bitcoin anahtarının sahipliğini kanıtlar. Açık anahtar, bitcoin adresi olarak kullanılır. Bölüm 1.3'te bahsedilen bitcoin gönderme işlemleri bu açık anahtar hedef gösterilerek yapılır. 52 haneden oluşan gizli anahtar'ın tek yönlü bir algoritma ile şifrelenmesiyle 34 haneli bir açık anahtar(bitcoin adresi) oluşturulur. "
+                           
+                           
+                           
+                    ></Label>
+                    <Image Margin="20,0,20,0" Source="key.jpg"/>
+                    <Label TextColor="White" FontSize="Medium" LineBreakMode="CharacterWrap"
+                           Text="Gizli anahtar, bu oluşturulan açık anahtarın sahipliğini kanıtlar ve sadece cüzdan sahibi tarafından bilinir. Cüzdan sahibinin bu adresi gizli tutması ve güvenliğini sağlaması gerekir. Aksi halde gizli anahtara sahip olan birisi o adreste bulunan bitcoinleri kulanma hakkına sahip olur, gizli anahtar olmadan bitcoinleriniz başkaları tarafından erişilemez olacaktır. Gizli anahtarı bu yönüyle internet bankacılığı şifrenize benzetebiliriz.
+
+" 
+                           ></Label>
+                    <Button Clicked="Button_Clicked" Text="İleri" HorizontalOptions="End" WidthRequest="100" Margin="0,10,0,20" BackgroundColor="#42d0ff" TextColor="White"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

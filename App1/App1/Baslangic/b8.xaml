@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Baslangic.b8">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <!--<StackLayout Padding="10,0,10,10">
+
+                    <Label Text="1.8 - Önemli Noktalar" HorizontalOptions="Center" FontSize="Large" 
+                   TextColor="White" FontAttributes="Bold"/>
+                    --><!--<Image Source="bitLogo.png" WidthRequest="120" HeightRequest="120"/>--><!--
+                </StackLayout>-->
+                <StackLayout Padding="10,10,10,0">
+                    <Label TextColor="White" FontSize="Medium" LineBreakMode="CharacterWrap"
+                           Text="      Dijitaldir, kağıt paranın veya altının aksine Bitcoinler yer kaplamazlar. Kolayca yanınızda taşıyabilirsiniz.&#x0a;&#x0a;      Kalıcıdır, kaybolabilir veya çalınabilir fakat yok edilemezler. Cüzdan uygulamanızın yedeğini aldığınız taktirde cihazın bozulması durumunda herhangi bir cüzdanda tekrar aktif edilebilirler.&#x0a;&#x0a;      Dünyanın her yerine büyük miktarlarda parayı çok küçük ücretlerle göndermek mümkündür, üstelik çok kısa sürelerde.&#x0a;&#x0a;      Kullanımı kolaydır. Evraklarla, imzalarda uğraşmanıza gerek yoktur.&#x0a;&#x0a;      Belirli bir seviyede gizlilik sağlar. Ne kadar paranızın olduğunu veya nasıl harcadığınızı kimse bilmez."></Label>
+                    <Button Clicked="Button_Clicked" Text="İleri" HorizontalOptions="End" WidthRequest="100" Margin="0,10,0,20" BackgroundColor="#42d0ff" TextColor="White"/>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

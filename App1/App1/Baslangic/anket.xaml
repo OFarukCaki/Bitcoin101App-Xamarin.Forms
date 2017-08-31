@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Baslangic.anket">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout BackgroundColor="#484686">
+            <StackLayout BackgroundColor="#5B5999" Padding="15,15,15,15">
+                <Label  Text="Tebrikler, eğitimi tamamladınız. Bizim için aşağıdaki kısa soruları cevaplamanızı rica ediyoruz." 
+                       HorizontalTextAlignment="Center"  TextColor="White"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Margin="15,15,15,15" Text="Eğitime 10 üzerinden puanınız: " TextColor="LightGray" VerticalOptions="Center"/>
+                <Picker  Margin="0,0,20,0" x:Name="picker1" Title="" SelectedIndexChanged="picker1_SelectedIndexChanged"  VerticalOptions="Center" WidthRequest="50" HorizontalOptions="EndAndExpand" TextColor="White">
+                    <Picker.Items>
+                        <x:String>10</x:String>
+                        <x:String>9</x:String>
+                        <x:String>8</x:String>
+                        <x:String>7</x:String>
+                        <x:String>6</x:String>
+                        <x:String>5</x:String>
+                        <x:String>4</x:String>
+                        <x:String>3</x:String>
+                        <x:String>2</x:String>
+                        <x:String>1</x:String>
+                    </Picker.Items>
+                </Picker>
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Margin="15,15,15,15" Text="Bundan sonra Bitcoin kullanmayı düşünüyor musunuz? " TextColor="LightGray" VerticalOptions="Center" />
+                <Picker Margin="0,0,30,0" x:Name="picker2" Title=""  VerticalOptions="Center" WidthRequest="50" HorizontalOptions="EndAndExpand" TextColor="White">
+                    <Picker.Items>
+                        <x:String>Evet</x:String>
+                        <x:String>Belki</x:String>
+                        <x:String>Hayır</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand" />
+            <!--<TableView Intent="Form">
+                <TableRoot>
+                    <TableSection >
+                        <EntryCell  x:Name="ulkeCell" Label="Ülke"  LabelColor="LightGray" Placeholder="Türkiye"  >                            
+                        </EntryCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>-->
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal"  VerticalOptions="Center" Margin="15,10,30,10">
+                    <Label Text="Ülke: " TextColor="LightGray" VerticalOptions="Center" />
+                    <Entry x:Name="entry1" Placeholder="Türkiye   " HorizontalOptions="FillAndExpand" TextColor="White" WidthRequest="70"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Label Text="Yaş: " TextColor="LightGray" VerticalOptions="Center" />
+                    <Entry x:Name="entry2" Keyboard="Numeric" WidthRequest="40" TextColor="White"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Cinsiyet: " TextColor="LightGray" VerticalOptions="Center"  Margin="15,10,30,10"/>
+                <!--<Entry x:Name="entry3" Placeholder="_______" TextColor="White" WidthRequest="60" />-->
+                    <Picker Margin="0,0,30,0" x:Name="picker3" Title=""  VerticalOptions="Center" WidthRequest="60" HorizontalOptions="EndAndExpand" TextColor="White">
+                        <Picker.Items>
+                            <x:String>Erkek</x:String>
+                            <x:String>Kadın</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </StackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand" />
+            <StackLayout Margin="15,10,5,10">
+                <Label Text="Bitcoini öğrenmek istemenizdeki başlıca amaçlarınız?" TextColor="LightGray" ></Label>
+            </StackLayout>
+                <StackLayout Orientation="Horizontal" HeightRequest="100">
+                    <StackLayout>
+                        <TableView>
+                            <TableRoot>
+                                <TableSection>
+                                    <SwitchCell x:Name="switch1" OnChanged="switch1_OnChanged" Text="Merak" On="False"></SwitchCell>
+                                    <SwitchCell x:Name="switch2" Text="Para Transferi" On="False"></SwitchCell>
+                                </TableSection>
+                            </TableRoot>
+                        </TableView>
+                    </StackLayout>
+                    <StackLayout>
+                        <TableView >
+                            <TableRoot>
+                                <TableSection>
+                                    <SwitchCell x:Name="switch3" Text="Yatırım" On="False"></SwitchCell>
+                                    <SwitchCell x:Name="switch4" Text="Ödeme Aracı" On="False"></SwitchCell>
+                                </TableSection>
+                            </TableRoot>
+                        </TableView>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout>
+                    <Button Text="Gönder" HorizontalOptions="FillAndExpand" WidthRequest="100" Margin="0,10,0,20" BackgroundColor="#42d0ff" TextColor="White" Clicked="Button_Clicked"/>
+                </StackLayout>
+                <!--<Button Margin="0,0,0,0" Text="Gönder" WidthRequest="100" HorizontalOptions="Fill" BackgroundColor="Blue" TextColor="White" Clicked="Button_Clicked"/>-->
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

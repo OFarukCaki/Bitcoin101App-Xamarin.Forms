@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MyMasterPages.MasterDetailPage1Detail"
+             Title="Hoşgeldiniz!">
+    <StackLayout   BackgroundColor="#484686">
+        <StackLayout Padding="20, 10, 20, 10">
+            <Image  Source="mainLogo.png"></Image>
+        </StackLayout>
+        <StackLayout BackgroundColor="#5B5999" Padding="20, 10, 20, 10">
+            <Label TextColor="White" Text="Bu uygulama, daha önce Bitcoin tecrübesi olmayanlar için hazırlanmıştır. ">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <OnPlatform.Android>OpenSans-Regular.ttf#OpenSans-Regular</OnPlatform.Android>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+        </StackLayout>
+        
+        <!--<StackLayout Margin="0,20,0,0" HorizontalOptions="Center">
+            <Label Text="Eğitim seviyenizi seçin" FontSize="Large" TextColor="White"/>
+
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Spacing="0" BackgroundColor="#5B5999" Padding="10,7,20,7">
+            <Label Text="Temel" TextColor="White" FontSize="Large" VerticalOptions="Center"  HorizontalOptions="StartAndExpand">
+
+            </Label>
+            <Switch IsToggled="True" HorizontalOptions="End"  VerticalOptions="Center" />
+
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Spacing="0" BackgroundColor="#5B5999" Padding="10,7,20,7" >
+            <Label Text="Orta" TextColor="White" FontSize="Large" VerticalOptions="Center" HorizontalOptions="StartAndExpand" />
+            <Switch IsToggled="False" HorizontalOptions="End"  VerticalOptions="Center"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Spacing="0" BackgroundColor="#5B5999" Padding="10,7,20,7">
+            <Label Text="İleri" FontSize="Large" TextColor="White" VerticalOptions="Center" HorizontalOptions="StartAndExpand" />
+            <Switch IsToggled="{Binding Path=Monitored, Mode=TwoWay}" HorizontalOptions="End"  VerticalOptions="Center"/>
+        </StackLayout>-->
+
+
+        <StackLayout   VerticalOptions="Start" Margin="0,30,0,50" HeightRequest="134">
+            <!--<StackLayout BackgroundColor="White"  VerticalOptions="Start" Margin="0,30,0,50" HeightRequest="134">-->
+            <Label Margin="20,0,20,0"  Text="Eğitim seviyenizi seçin" FontSize="Large" TextColor="White"/>
+            <TableView Intent="Form" BackgroundColor="White">
+                <TableSection >
+                    <SwitchCell Text="Temel" On="True"/>
+                    <SwitchCell Text="İleri"  IsEnabled="False"  />
+                    <SwitchCell Text="Blockchain 101"  IsEnabled="False"  />
+                    <!--<SwitchCell Text="İleri"  />-->
+                </TableSection>
+            </TableView>
+        </StackLayout>
+        
+        <Button Margin="0,0,0,15" HeightRequest="55" Text="BAŞLA" 
+                BackgroundColor="#2196F3" TextColor="White" VerticalOptions="EndAndExpand" 
+                Clicked="Button_Clicked"></Button>
+    </StackLayout>
+
+
+</ContentPage>

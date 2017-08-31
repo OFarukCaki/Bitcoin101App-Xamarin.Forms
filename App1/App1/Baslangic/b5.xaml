@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Baslangic.b5">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <!--<StackLayout Padding="10,0,10,10">
+
+                    <Label Text="1.5 - Güvenlik" HorizontalOptions="Center" FontSize="Large" 
+                   TextColor="White" FontAttributes="Bold"/>
+                    --><!--<Image Source="bitLogo.png" WidthRequest="120" HeightRequest="120"/>--><!--
+                </StackLayout>-->
+                <StackLayout Padding="10,10,10,0">
+                    <Image Margin="20,0,20,0" Source="safe2.png"/>
+                    <Label TextColor="White" FontSize="Medium" LineBreakMode="CharacterWrap"
+                           Text="      Sistem güvenlidir. Güvenlik matematiksel olarak güvenilirliği ispatlanmış, kriptografik dijital imzalama metotları kullanılarak gerçekleştirilir. Kötü niyetli kişilerin veriler üzerinde manüpülasyon yapması, olmayan bir Bitcoini üretmesi veya işlemleri tersine çevirmesi mümkün değildir." 
+                           
+                           
+                    ></Label>
+                    
+                    
+                    <Button Clicked="Button_Clicked" Text="İleri" HorizontalOptions="End" WidthRequest="100" Margin="0,10,0,20" BackgroundColor="#42d0ff" TextColor="White"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

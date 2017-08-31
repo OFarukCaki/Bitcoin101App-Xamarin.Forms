@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Baslangic.demo1">
+    <ContentPage.Content>
+
+        <StackLayout BackgroundColor="#ebebeb">
+            <StackLayout BackgroundColor="Gray">
+                <Label Text="Bitcoin101 Demo Wallet App" HorizontalTextAlignment="Center" TextColor="White"  Margin="10,20,10,20" FontSize="Large"/>
+
+            </StackLayout>
+            <StackLayout Margin="10,0,10,0">
+                <Label Text="Alıcı" TextColor="#005b95"></Label>
+                <Entry Placeholder="btc adress" x:Name="btcAdress"></Entry>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"  Margin="20,15,20,15">
+                <StackLayout Orientation="Vertical"  >
+                    <Label Text="Gönderilecek Miktar" TextColor="#005b95"></Label>
+                    <Entry Keyboard="Numeric" Placeholder="BTC miktarı" PlaceholderColor="Gray" TextChanged="Entry_TextChanged" x:Name="btcValue"></Entry>
+                </StackLayout>
+                <StackLayout Padding="0,0,0,5" VerticalOptions="End">
+                    <Label Text="≈" FontSize="Large"  ></Label>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" >
+                    <Label Text="          "  TextColor="White" ></Label>
+                    <Entry Keyboard="Numeric" Placeholder="amount in BTC" PlaceholderColor="Gray" WidthRequest="50" x:Name="usdValue" TextChanged="usdValue_TextChanged"></Entry>
+                </StackLayout>
+                
+                
+            </StackLayout>
+
+            <Label Margin="10,40,10,5" Text="*0.00005 BTC ağ ücreti ödenecektir." FontSize="Small" TextColor="Black"></Label>
+            <Button Margin="20,0,20,0" Text="Gönder" FontSize="Large" BackgroundColor="DarkSeaGreen" TextColor="White" Clicked="Button_Clicked" ></Button>
+            <StackLayout x:Name="errCell">
+                <Label Margin="7,0,7,0" TextColor="Black" x:Name="errLabel" HorizontalTextAlignment="Center"></Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

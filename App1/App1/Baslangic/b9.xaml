@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Baslangic.b9">
+    <ContentPage.Content>
+        <ScrollView>
+            <ScrollView>
+                <StackLayout>
+                    <StackLayout BackgroundColor="#61D94E">
+
+                        <Label Margin="10,10,10,10" Text="Demo - Para Transferi" HorizontalOptions="Center" FontSize="Large" 
+                   TextColor="White" FontAttributes="Bold"/>
+                        <!--<Image Source="bitLogo.png" WidthRequest="120" HeightRequest="120"/>-->
+                    </StackLayout>
+                    <StackLayout Padding="10,10,10,0">
+                        <Label TextColor="White" FontSize="Medium" 
+                           Text="      Yurtdışındaki bir yakınınıza 1000$ para göndermeniz gerektiğini farz edin.&#x0a;&#x0a;    Güncel Bitcoin kurunu 4000$ olarak kabul edelim.&#x0a;    Bu durumda 1000$ göndermeniz için gereken miktar 0.25 BTC olacaktır.&#x0a;&#x0a;    Alıcı taraf Bitcoin adresini size gönderdi, adresi kopyalayın:"
+                           ></Label>
+                        <Entry Text="1Pa6LVu1djwbV5DoHQgNkBaBQ52hiUx6pa" TextColor="#23e3fe" FontAttributes="Bold" ></Entry>
+                        <Label TextColor="White" FontSize="Medium" Text="    Bir sonraki sayfada örnek olarak hazırlanmış cüzdan uygulaması açılacak, kopyaladığınız adrese en az 0.25 BTC gönderin." ></Label>
+                        <Button Text="Tamam, cüzdanı aç" Clicked="Button_Clicked" BackgroundColor="Turquoise" TextColor="White"></Button>
+                        <!--<Button Text="İleri" HorizontalOptions="End" WidthRequest="100" Margin="0,0,0,20" BackgroundColor="#42d0ff" TextColor="White" Clicked="Button_Clicked_1"/>-->
+
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

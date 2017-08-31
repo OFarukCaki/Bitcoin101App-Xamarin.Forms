@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Baslangic.b4">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <!--<StackLayout Padding="10,0,10,10">
+
+                    <Label Text="1.4 - Bitcoin Madenciliği" HorizontalOptions="Center" FontSize="Large" 
+                   TextColor="White" FontAttributes="Bold"/>
+                    --><!--<Image Source="bitLogo.png" WidthRequest="120" HeightRequest="120"/>--><!--
+                </StackLayout>-->
+                <StackLayout Padding="10,10,10,0">
+                    <Label TextColor="White" FontSize="Medium" LineBreakMode="CharacterWrap"
+                           Text="      Madenciler Bitcoin ağının temelini oluştururlar. Bitcoin madenciliği, sisteme yeni Bitcoin arz etmenin, hileli işlemleri engellemenin, olmayan Bitcoin'leri harcatmamanın ve çifte harcamayı engellemenin yoludur. Madenciler Bitcoin ağında gerçekleşen işlemler onaylarlar ve kalıcı olarak Block-Zincirine kaydederler. İşlem onaylandıktan sonra iptal edilemez.
+" 
+                           
+                           
+                    ></Label>
+                    <Image Margin="20,0,20,0" Source="madenci.png"/>
+                    <Label TextColor="White" FontSize="Medium" LineBreakMode="CharacterWrap"
+                           Text="Her 10 dakikada bir blok ödülü adı verilen 12,5 Bitcoin açığa çıkar ve madenciler arasında kazım gücü(hashrate) oranına göre paylaştırılır. Yeni Bitcoinler isteme bu şekilde dahil olurlar ve madenciler üzerinden dağılırlar.&#x0a;&#x0a;      Madencilik işlemi 2140 yılına kadar devam edecektir, 2140 yılından sonra madenciler sadece işlem ücretlerinden getiri sağlayabileceklerdir. Toplamda oluşturulacak Bitcoin miktarı 21 Milyon ile sınırlıdır ve fazlası üretilemez.&#x0a;
+                           
+" 
+                           ></Label>
+                    <Label TextColor="White" FontSize="Medium" FontAttributes="Bold" Text="17.08.2017 Tarihi İtibarıyla:&#x0a;
+"></Label>
+                    <Label TextColor="Bisque" FontSize="Medium" Text=" • Piyasada toplam 16,512,250 Bitcoin vardır.&#x0a;&#x0a; • 1 Bitcoin, 4300 Amerikan Dolarıdır.&#x0a;&#x0a; • Piyasa Değeri (Market Cap.) 71,190,914,650 Amerikan Dolarıdır&#x0a;&#x0a; • Gün içi yapılan toplam işlem 580,196 BTCdir.&#x0a;&#x0a; • Gün içi yapılan toplam işlem 2,493,930,000 Amerikan Dolarıdır.&#x0a;&#x0a;"></Label>
+                    
+                    
+                    <Button Clicked="Button_Clicked" Text="İleri" HorizontalOptions="End" WidthRequest="100" Margin="0,10,0,20" BackgroundColor="#42d0ff" TextColor="White"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

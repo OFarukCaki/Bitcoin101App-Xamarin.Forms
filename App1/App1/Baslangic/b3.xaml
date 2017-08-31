@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Baslangic.b3">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <!--<StackLayout Padding="10,0,10,10">
+
+                    <Label Text="1.3 - Bitcoin Cüzdanı Ve İşlemler" HorizontalOptions="Center" FontSize="Large" 
+                   TextColor="White" FontAttributes="Bold"/>
+                    -->
+                <!--<Image Source="bitLogo.png" WidthRequest="120" HeightRequest="120"/>-->
+                <!--
+                </StackLayout>-->
+                <StackLayout Padding="10,10,10,0">
+                    <Label TextColor="White" FontSize="Medium" LineBreakMode="CharacterWrap"
+                           Text="      Bitcoinleriniz bilgisayarınız veya telefonunuzdaki dijital cüzdanda, fiziksel cüzdanda veya online cüzdan servislerinde bulunur. Bitcoin alma ve gönderme işlemleri bu cüzdanlar aracılığı ile gerçekleştirilir.&#x0a; &#x0a;      Bitcoin göndermek e-posta göndermek kadar kolaydır. Tek bilmeniz gereken göndereceğiniz kişinin bitcoin adresidir(Açık anahtar - Bölüm 1.2). Bitcoin adresini banka hesap numarasına benzetebiliriz." 
+                           
+                           
+                    ></Label>
+                    <Image Margin="20,0,20,0" Source="tx.png"/>
+                    <Label TextColor="White" FontSize="Medium" LineBreakMode="CharacterWrap"
+                           Text="Cüzdan uygulamanızdan göndereceğiniz bitcoin adresini ve göndermek istediğiniz miktarı yazdıktan sonra işleminizi gerçekleştirirsiniz.Bitcoin gönderirken bir miktar işlem ücreti ödemeniz gerekmektedir. &#x0a;&#x0a; 
+Bu ücret doğrudan işlemleri onaylayan madencilere aktarılır(Bölüm 1.5). Birçok cüzdan uygulamasında bu miktar otomatik olarak ayarlanır ve ek olarak bir işlem yapmanıza gerek yoktur.
+                           
+" 
+                           ></Label>
+                    <Label TextColor="White" FontSize="Medium" FontAttributes="Bold" Text="Kullanabileceğiniz bazı cüzdan uygulamaları:&#x0a;
+"></Label>
+                    <Label TextColor="Bisque" FontSize="Medium" Text=" • Blockchain.info (web)&#x0a;&#x0a; • Coinbase (web)&#x0a;&#x0a; • Electrum (cross-platform)&#x0a;&#x0a; • Mycelium (Android/iOS)&#x0a;&#x0a; • Bitcoin Core (cross-platform)&#x0a;&#x0a;"></Label>
+                    <Label TextColor="White" FontSize="Medium" LineBreakMode="CharacterWrap"
+                           Text="      Bitcoin transferi gerçekleştikten ve madenciler tarafından onaylandıktan sonra geri dönüşü veya iptali mümkün değildir. Bu konuda kullanıcıların dikkatli olması gerekir. Herhangi bir merkezi kontrol sistemi olmadığı için yanlış bir adrese gönderilen Bitcoinler dahi geri döndürülemez." 
+                           
+                           
+                    >
+                    </Label>
+                    <Image Source="noback.jpg" Margin="20,0,20,0"/>
+                    <Button Clicked="Button_Clicked" Text="İleri" HorizontalOptions="End" WidthRequest="100" Margin="0,10,0,20" BackgroundColor="#42d0ff" TextColor="White"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
