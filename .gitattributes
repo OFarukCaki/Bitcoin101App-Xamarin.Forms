@@ -64,3 +64,5 @@
 
 # github linguist ignore vendor packages to correct rrpository language type
 packages/* linguist-vendored
+App1/App1.Android/obj/* linguist-vendored
+App1/App1.iOS/obj/* linguist-vendored
