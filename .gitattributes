@@ -61,3 +61,4 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
+App1/App1.Android/obj/Debug/android/src/* linguist-vendored
