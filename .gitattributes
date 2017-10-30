@@ -61,3 +61,6 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
+
+# github linguist ignore vendor packages to correct rrpository language type
+packages/* linguist-vendored
